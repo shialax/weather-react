@@ -7,6 +7,7 @@ import WeatherInfo from "./WeatherInfo";
 export default function Weather(props) {
     const [city, setCity] = useState(props.defaultCity);
     const[weatherData, setWeatherData] = useState({});
+    
 
     function handleResponse(response) {
         setWeatherData({
@@ -16,7 +17,7 @@ export default function Weather(props) {
             city: response.data.name,
             date: new Date(response.data.dt * 1000),
             humidity: response.data.main.humidity,
-            imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+            imgUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
             description: response.data.weather[0].description
         })
 
