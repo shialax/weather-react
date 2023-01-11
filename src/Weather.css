@@ -8,8 +8,8 @@
     background: linear-gradient(#f7aaa8, #ffd1a0, #f9b6c6);
   }
   
-  weather-temperature img {
-    margin-right: 10px;
+.Weather canvas{
+    margin-right: 20px;
     height: 64px;
     width: 64px;
   }
