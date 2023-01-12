@@ -9,6 +9,7 @@
   }
   
 .Weather canvas{
+  margin-top: 5px;
     margin-right: 20px;
     height: 64px;
     width: 64px;
@@ -37,4 +38,7 @@
   }
   .forecast.weather-forecast {
     display: block;
+  }
+  span.unit a {
+    text-decoration: none;
   }
